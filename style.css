@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{  /* resetando config margin
+    e padding na pagina toda */
+    margin: 0;
+    padding: 0;
+}
+
+body{ /*todo o conteudo visual da pagina*/
+    height: 100vh; /*100% tamanho da tela*/
+    box-sizing: border-box; /*limitar a margem*/
+    background-color: #000000; /*cor de fundo*/
+    color: #F6F6F6; /* cor da fonte*/
+}
+
+.titulo-destaque{ /*strong*/
+    color: #22D4FD; /*cor da fonte*/
+}
+
+.apresentacao{ /*main*/
+    display: flex;
+    /*flex-direction: row;  section (col esq) e img (col */
+    align-items: center; /*colunas centralizadas*/
+    justify-content: space-between; /*espaço entre as colunas*/
+    margin: 10% 15%; /* topo/fundo - direita/esquerda */
+    
+}
+.apresentacao__conteudo{ /*section -coluna esquerda*/
+    display: flex; /* caixas: h1 p div */
+    flex-direction: column; 
+    width: 50%; /*section ocupa 50% de largura da caixa main*/
+    gap: 40px; /*espaço entre as caixa(tags) dentro da coluna*/
+}
+
+.apresentacao__conteudo__titulo{ /*h1 - coluna esquerda*/
+    font-size: 36px; /*tamanho da fonte*/
+    font-family: 'Krona One', sans-serif; /*estilo da letra*/
+}
+
+.apresentacao__conteudo__texto{ /*tag p - coluna esquerda*/
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo__links{ /* div -coluna esquerda*/
+    display: flex; /* 2 caixas - botoes - tag <a> */
+    flex-direction: row; /* botoes na horizontal*/
+    justify-content: space-between; /*espaço entre caixas*/
+}
+
+.apresentacao__conteudo__links__link{ /*tag a - botoes que etao na div*/
+    background-color: #22D4FD; /*cor de fundo*/
+    width: 280px; /*largura do botao*/
+    text-align: center; /*centraliza o texto do botao*/
+    border-radius: 16px; /*arredondamento da borda*/
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: 600; /*peso da fonte*/
+    padding: 21.5px 0; /* espaço entre texto e borda do botao*/
+    text-decoration: none; /*tira o sublinhado do texto*/
+    color: #000000; /*cor da fonte*/
+    font-family: 'Montserrat', sans-serif; /*estilo da fonte*/
+}
